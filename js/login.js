@@ -17,6 +17,7 @@ $('#loginpage').live('pageshow', function(event){
 				success:function(aksi){
 					if(aksi == '1'){
 						$.mobile.changePage( "home.html", {
+									transition : "pop",
 									reloadPage : true, 
 									changeHash : true });
 						sessionStorage.setItem('reg_no', reg_no);

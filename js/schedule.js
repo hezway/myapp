@@ -24,7 +24,7 @@ $('#schedulepage').live('pageshow', function(event){
 	
 	$.ajax({
 		type : 'GET',
-		url : 'http://localhost/services/get_class_schedule2.php',
+		url : 'http://119.82.227.198/~k9576440/services/get_class_schedule2.php',
 		async: true,
 		crossDomain: true,
 		dataType : 'jsonp',

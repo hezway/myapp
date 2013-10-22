@@ -22,7 +22,7 @@ $('#semesterpage').live('pageshow', function(event){
 	});
 	$.ajax({
 		type : 'GET',
-		url : 'http://localhost/services/get_gpa.php',
+		url : 'http://119.82.227.198/~k9576440/services/get_gpa.php',
 		async: true,
 		crossDomain: true,
 		dataType : 'jsonp',
@@ -49,7 +49,7 @@ $('#gradepage').live('pageshow', function(event){
 	var AmbilData;
 	$.ajax({
 		type : 'GET',
-		url : 'http://localhost/services/get_student_grade.php?id='+ id,
+		url : 'http://119.82.227.198/~k9576440/services/get_student_grade.php?id='+ id,
 		async: true,
 		crossDomain: true,
 		dataType : 'jsonp',
@@ -68,7 +68,7 @@ $('#gradepage').live('pageshow', function(event){
 	});
 	$.ajax({
 		type : 'GET',
-		url : 'http://localhost/services/get_student_grade_header.php?id='+ id,
+		url : 'http://119.82.227.198/~k9576440/services/get_student_grade_header.php?id='+ id,
 		async: true,
 		crossDomain: true,
 		dataType : 'jsonp',
