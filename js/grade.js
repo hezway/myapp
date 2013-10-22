@@ -4,7 +4,7 @@ $('#semesterpage').live('pageshow', function(event){
 	var AmbilData2;
 	$.ajax({
 		type : 'GET',
-		url : 'http://localhost/services/get_semester_list.php',
+		url : 'http://119.82.227.198/~k9576440/services/get_semester_list.php',
 		async: true,
 		crossDomain: true,
 		dataType : 'jsonp',

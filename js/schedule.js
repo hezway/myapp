@@ -3,7 +3,7 @@ $('#schedulepage').live('pageshow', function(event){
 	var AmbilData;
 	$.ajax({
 		type : 'GET',
-		url : 'http://localhost/services/get_class_schedule.php',
+		url : 'http://119.82.227.198/~k9576440/services/get_class_schedule.php',
 		async: true,
 		crossDomain: true,
 		dataType : 'jsonp',
