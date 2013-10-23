@@ -11,7 +11,7 @@ $('#academiccalenderpage').live('pageshow', function(event){
 				AmbilData1 = data.items;
 				$.each(AmbilData1, function(index, loaddata) {
 					
-					$('#academiccalenderlist').append('<li ><a href="#" onclick="window.open(\'http://119.82.227.198/~k9576440/pdf/' + loaddata.academic_calender + '\',\'_blank\',\'location=no\');">' + loaddata.semester_desc + '</a>' +
+					$('#academiccalenderlist').append('<li ><a href="#" onclick="navigator.app.loadUrl(\'http://119.82.227.198/~k9576440/pdf/' + loaddata.academic_calender + '\',{openExternal: true});" rel="external" target="_blank">' + loaddata.semester_desc + '</a>' +
 					'</li>');					  
 					});
 					$('#academiccalenderlist').listview('refresh');
