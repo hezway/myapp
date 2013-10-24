@@ -1,3 +1,4 @@
+
 $('#academiccalenderpage').live('pageshow', function(event){ 
 	var AmbilData1;
 	$.ajax({
@@ -9,16 +10,21 @@ $('#academiccalenderpage').live('pageshow', function(event){
 		success : function(data){
 				AmbilData1 = data.items;
 				$.each(AmbilData1, function(index, loaddata) {
-										
+					
+					$('#academiccalenderlist').append('<li ><a href="http://119.82.227.198/~k9576440/pdf/' + loaddata.academic_calender + '" data-ajax="false" target="_blank" rel="external" >' + loaddata.semester_desc + '</a>' +
+					'</li>');					  
+					});
+					
+					/*
 					$('#academiccalenderlist').append('<li ><a onclick="window.open(\'http://119.82.227.198/~k9576440/pdf/' + loaddata.academic_calender + '\',\'_blank\',\'location=yes\'); return false;">' + loaddata.semester_desc + '</a>' +
 					'</li>');					  
 					});
-					$('#academiccalenderlist').listview('refresh');					
+					*/
+					$('#academiccalenderlist').listview('refresh');
 				}
 	});
+
 });
-
-
 
 
 
