@@ -22,7 +22,7 @@ $('#academiccalenderpage').live('pageshow', function(event){
 					*/
 					
 					
-					$('#academiccalenderlist').append('<li ><a onclick="window.open(\'http://119.82.227.198/~k9576440/pdf/' + loaddata.academic_calender + '\',\'_system\',\'location=yes\');">' + loaddata.semester_desc + '</a>' +
+					$('#academiccalenderlist').append('<li ><a onclick="window.open(\'http://docs.google.com/viewer?url=http://119.82.227.198/~k9576440/pdf/' + loaddata.academic_calender + '\',\'_system\',\'location=yes\');">' + loaddata.semester_desc + '</a>' +
 					'</li>');					  
 					});
 					
