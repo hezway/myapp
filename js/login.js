@@ -17,15 +17,12 @@ $('#loginpage').live('pageshow', function(event){
 				success:function(aksi){
 					if(aksi == '1'){
 						$.mobile.changePage( "home.html", {
-									transition : "pop",
-									reloadPage : true, 
-									changeHash : true });
+									transition : "pop" });
 						sessionStorage.setItem('reg_no', reg_no);
 					}
 					else{
-						$("#error").prepend("<p align='center'>Wrong username or Password !!</p>");
-						document.formlogin.username.value = "";
-						document.formlogin.password.value = "";
+						$("#error").append("<p align='center'>Wrong username or Password !!</p>");
+						
 					}
 
 				}						
