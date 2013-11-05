@@ -16,9 +16,10 @@ $('#loginpage').live('pageshow', function(event){
 				data: datalogin,
 				success:function(aksi){
 					if(aksi == '1'){
+						//Load home.hmtl
 						$.mobile.changePage( "home.html", {
 									transition : "pop" });
-						sessionStorage.setItem('reg_no', reg_no);
+						sessionStorage.setItem('reg_no', reg_no); //simpan reg_no dalam session
 					}
 					else{
 						$("#error").append("<p align='center'>Wrong username or Password !!</p>");
