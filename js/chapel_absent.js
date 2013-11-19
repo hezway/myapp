@@ -1,9 +1,10 @@
 
 $('#chapelabsentpage').live('pageshow', function(event){ 
 	var AmbilData1;
+	var reg_no = sessionStorage.getItem('reg_no');
 	$.ajax({
 		type : 'GET',
-		url : 'http://119.82.227.198/~k9576440/services/get_chapel_absent.php',
+		url : 'http://119.82.227.198/~k9576440/services/get_chapel_absent.php?reg_no='+ reg_no,
 		async: true,
 		crossDomain: true,
 		dataType : 'jsonp',

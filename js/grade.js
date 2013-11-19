@@ -2,9 +2,10 @@
 $('#semesterpage').live('pageshow', function(event){ 
 	var AmbilData1;
 	var AmbilData2;
+	var reg_no = sessionStorage.getItem('reg_no');
 	$.ajax({
 		type : 'GET',
-		url : 'http://119.82.227.198/~k9576440/services/get_semester_list.php',
+		url : 'http://119.82.227.198/~k9576440/services/get_semester_list.php?reg_no='+ reg_no,
 		async: true,
 		crossDomain: true,
 		dataType : 'jsonp',
@@ -22,7 +23,7 @@ $('#semesterpage').live('pageshow', function(event){
 	});
 	$.ajax({
 		type : 'GET',
-		url : 'http://119.82.227.198/~k9576440/services/get_gpa.php',
+		url : 'http://119.82.227.198/~k9576440/services/get_gpa.php?reg_no='+ reg_no,
 		async: true,
 		crossDomain: true,
 		dataType : 'jsonp',
@@ -46,10 +47,11 @@ $('#semesterpage').live('pageshow', function(event){
 
 $('#gradepage').live('pageshow', function(event){ 
 	var id = getUrlVars()["id"];
+	var reg_no = sessionStorage.getItem('reg_no');
 	var AmbilData;
 	$.ajax({
 		type : 'GET',
-		url : 'http://119.82.227.198/~k9576440/services/get_student_grade.php?id='+ id,
+		url : 'http://119.82.227.198/~k9576440/services/get_student_grade.php?id='+ id +'&reg_no=' + reg_no,
 		async: true,
 		crossDomain: true,
 		dataType : 'jsonp',
@@ -68,7 +70,7 @@ $('#gradepage').live('pageshow', function(event){
 	});
 	$.ajax({
 		type : 'GET',
-		url : 'http://119.82.227.198/~k9576440/services/get_student_grade_header.php?id='+ id,
+		url : 'http://119.82.227.198/~k9576440/services/get_student_grade_header.php?id='+ id +'&reg_no=' + reg_no,
 		async: true,
 		crossDomain: true,
 		dataType : 'jsonp',

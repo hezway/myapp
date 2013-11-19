@@ -20,13 +20,13 @@
             <div data-role="content" id="frmlogin" name="contentConfirmation" align="center">  
                 <h3> Student Login</h3>
                 <div id="error"></div>
-                <form id="formlogin" name="formlogin" method="POST">  
+                <form id="formlogin" name="formlogin" method="POST"> 
+					<div data-role="fieldcontain">  
+					<label>Username: </label> 
+                    <input class="required" id="username" name="username" value="" type="text" placeholder="Username">            
+                    </div>
                     <div data-role="fieldcontain">  
-                        <label>Username: </label>  
-                        <input class="required" id="username" name="username" value="" type="text" placeholder="Username">            
-                    </div>  
-                    <div data-role="fieldcontain">  
-                        <label>Password: </label>  
+                    <label>Password: </label>  	
                         <input id="password" name="password" value="" type="password" placeholder="Password">            
                     </div>  
                     <div class="ui-grid-solo"> 
