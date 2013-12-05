@@ -1,4 +1,4 @@
-
+//a
 $('#schedulepage').live('pageshow', function(event){
 	var AmbilData;
 	var reg_no = sessionStorage.getItem('reg_no');
@@ -16,7 +16,7 @@ $('#schedulepage').live('pageshow', function(event){
 					  $('#schedulelist').append('<div data-role="collapsible">' + 
 					  					'<h4>[' + loaddata.subject_code +']  '+ loaddata.name_eng + ' / <i>' + loaddata.name_ind + '</i></h4>' +
 					  					'<p>Teacher : <b>' + loaddata.name + '</b> Credit : ' + loaddata.credit + '</p>'+
-										'<p>' + loaddata.day + ' On ' + loaddata.time + ' At ' + loaddata.room + '</p>'+
+										'<p>' + loaddata.day + ' On ' + loaddata.time + ' At ' + loaddata.room + + loaddata.pararel +'</p>'+
 										'<hr></div>');
 					});
 					//$('#schedulelist').listview('refresh');
