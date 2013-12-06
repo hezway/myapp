@@ -8,7 +8,7 @@ $('#loginpage').live('pageshow', function(event){
 			};
 			$.ajax({
 				type: "GET",
-				url: "http://119.82.227.198/~k9576440/services/proses.php",
+				url: "http://192.168.1.101/services/proses.php",
 				//url: "http://localhost/services/proses.php",
 				async: true,
 				crossDomain: true,		

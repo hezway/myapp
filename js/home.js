@@ -4,7 +4,7 @@ $('#homepage').live('pageshow', function(event){
 	var AmbilData;
 	$.ajax({
 		type : 'GET',
-		url : 'http://119.82.227.198/~k9576440/services/get_student_info.php?reg_no='+ reg_no,
+		url : 'http://192.168.1.101/services/get_student_info.php?reg_no='+ reg_no,
 		async: true,
 		crossDomain: true,
 		dataType : 'jsonp',
